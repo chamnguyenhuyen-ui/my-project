@@ -1,0 +1,32 @@
+<!-- <header>
+    <nav>
+        <a routerLink="/product">PRODUCT</a>
+    </nav>
+</header> -->
+<!-- <div>
+    Interpolation: {{}} - Dùng để hiển thị dữ liệu
+    <p>{{count}}</p>
+    Event Binding (event)="target"
+    <button (click)="increase()">Increment</button>
+</div> -->
+<!-- Property Binding [attribute] = "Value" -->
+<!-- <a [href]="link" target="_blank">Visit Facebook</a>
+<p>Product work!</p> -->
+
+<!-- Two-way Binding [(ngModel)]="value" -->
+ <!-- <p>{{name}}</p>
+ <label for="Name">Name: </label>
+ <input [(ngModel)]="name"> -->
+
+ <!-- Conditional Rendering -->
+  <!-- <p *ngIf="isLogin">Welcome {{name}}!</p>
+
+  <ul>
+    <li *ngFor="let food of foods">
+        {{food}}
+    </li>
+    <app-product-detail></app-product-detail>
+  </ul> -->
+  <div>
+    <app-product-detail [productName]="name" (handleClick)="handle($event)"></app-product-detail>
+  </div>
