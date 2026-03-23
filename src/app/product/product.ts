@@ -23,8 +23,19 @@ export class Product {
     //     this.count++;
     // }
     name: string = 'Iphone 15 Pro Max'
+    price: string = '500000';               
+    stock: string = '20';       
 
     handle(data: string){
     console.log(data);
     }
+
+    handlePrice(data: string) {               
+    console.log(data);
+  }
+
+    handleStock(data: string) {              
+      console.log(data);
+    }
+
 }

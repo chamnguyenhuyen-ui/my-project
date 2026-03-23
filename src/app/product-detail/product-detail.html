@@ -1,2 +1,7 @@
-<p>product-detail works! {{ productName}}</p>
-<button (click)="handleSend()">Click me</button>
+<p>product-detail works! {{ productName }}</p>
+<p>Giá: {{ productPrice }}</p>
+<p>Tồn kho: {{ productStock }}</p>
+
+<button (click)="handleSend()">Click me</button>         
+<button (click)="handlePriceSend()">Gửi giá</button>     
+<button (click)="handleStockSend()">Gửi tồn kho</button> 
