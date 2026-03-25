@@ -18,6 +18,14 @@
 </header> -->
 <body>
     <app-header></app-header>
+
     <router-outlet></router-outlet>
+
+    
+    
+    <app-life-cycle *ngIf="isShow" [name] = "lessonName"></app-life-cycle>
+
+    <button (click) = "toggleShow()">Toggle</button>
+
 </body>
 
